@@ -1,0 +1,71 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    background-color: $white;
+}
+
+h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: $default-font-size;
+    color: $primary-color;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: $default-font-size;
+    line-height: $line-height;
+    text-align: center;
+    color: $orange;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: $primary-color;
+    font-weight: normal;
+}
+
+p {
+    font-weight: normal;
+    color: $black;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        h2 {
+           color: $orange-light;
+        }
+    }
+}
+
+a {
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+
+    &:hover,
+    &:focus {
+        color: $black;
+    }
+    &:focus-visible {
+        outline: thin dotted;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+span {
+    font-weight: normal;
+}

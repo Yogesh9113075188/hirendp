@@ -1,0 +1,122 @@
+.photographer_section {
+    margin: 3.25rem 4.5rem;
+    display: grid;
+    grid-template-columns: $three-column;
+    gap: 5rem 20rem;
+
+    @include mediumDesktop {
+        margin: 6.25rem 4.5rem;
+        gap: 7rem;
+    }
+
+    @include tablette {
+        margin: 3rem 4.375rem;
+        grid-template-columns: $two-column;
+        gap: 5rem 4rem;
+    }
+
+    @include mediumMobileLandscape {
+        margin: 3rem 3rem;
+        gap: 4.375rem 3rem;
+    }
+
+    @include smallMobileLandscape {
+        margin: 3rem 1.8rem;
+        grid-template-columns: $one-column;
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 0.3125rem;
+    }
+}
+
+// Homepage article section (see photographerCard.js)
+
+.profil-card {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    
+    &__name {
+        @include tablette {
+            font-size: 1.3rem;
+        }
+
+        @include mediumMobileLandscape {
+            font-size: 1.27rem;
+        }
+
+        @include smallMobileLandscape {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+// User profil picture in homepage 
+.user-picture {
+    height: 12.5rem;
+    width: 12.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    -webkit-animation: show 0.8s ease-in-out;
+            animation: show 0.8s ease-in-out;
+
+    @include tablette {
+        width: 11.75rem;
+        height: 11.75rem;
+    }
+
+    @include mediumMobileLandscape {
+        width: 11.55rem;
+        height: 11.55rem;
+    }
+
+    @include smallMobileLandscape {
+        width: 11.75rem;
+        height: 11.75rem;
+    }
+    
+}
+
+// BText block under profil picture in homepage
+
+.thumbnail {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-animation: show-up 0.8s ease-in-out;
+            animation: show-up 0.8s ease-in-out;
+
+    @include smallMobile {
+        margin: initial;
+    }
+
+    &__location {
+        margin-bottom: 0.1875rem;
+        font-size: 1.25rem;
+        color: $primary-color;
+    }
+
+    &__tagline {
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.3rem;
+    }
+
+    &__price {
+        font-size: 1rem;
+        font-weight: normal;
+        color: $mediumGrey;
+    }
+}
+

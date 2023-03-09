@@ -1,0 +1,95 @@
+
+/* HOMEPAGE BODY */
+
+.main-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: visible;
+    
+    &--modal-open {
+        overflow: hidden;
+    }
+}
+
+/* HEADER */
+
+.site-header {
+    height: 8rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include smallMobile {
+        justify-content: center;
+        align-content: center;
+        gap: 1rem 3rem;
+    }
+    
+    &--photographerPage {
+
+        @include mediumMobileLandscape {
+            height: 6rem;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        margin-right: 7rem;
+        @include tablette {
+            margin-right: 4.375rem;
+            font-size: 1.7rem;
+        }
+
+        @include mediumMobileLandscape {
+            margin-right: 3rem;
+            font-size: 1.5rem;
+        }
+
+        @include largeMobile {
+            margin-right: 1.8rem;
+            font-size: 1.3rem;
+        }
+
+        @include mediumMobile {
+            margin-right: 1.5rem;
+        }
+
+        @include smallMobile {
+            margin: initial;
+        }
+    }
+
+/* NAVIGATION */
+
+    &__nav {
+        margin-left: 8.5rem;
+
+        @include tablette {
+            margin-left: 4.375rem;
+        }
+
+        @include mediumMobileLandscape {
+            margin-left: 3rem;
+        }
+
+        @include largeMobile {
+            margin-left: 1.8rem;
+        }
+
+        @include mediumMobile {
+            margin-left: 1.5rem;
+        }
+
+        @include smallMobile {
+            margin: initial;
+        }
+        
+            &--photographerPage {
+                @include mediumMobileLandscape {
+                margin: initial;
+            }
+        }
+    }
+}
+

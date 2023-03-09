@@ -1,0 +1,95 @@
+/* Breakpoints variables */
+
+$breakpoints: (
+    xsmall-mobile: 280px,
+    small-mobile: 320px,
+    medium-mobile: 400px,
+    large-mobile: 480px, 
+    small-mobile-landscape: 529px, 
+    medium-mobile-landscape: 599px,
+    large-mobile-landscape: 699px,
+    xlarge-mobile-landscape: 872px,
+    default-tablette: 992px,
+    medium-desktop: 1160px,
+    large-dektop: 1369px,
+    xlarge-desktop: 1440px
+);
+
+$breakpoints-heights: (
+    smaller-height: 699px,
+    larger-height: 939px
+);
+
+/* Font sizes */
+
+$default-font-size: 2.25rem;
+
+$contact-button-fs: 1.25rem;
+$contact-button-fs-mobile: 1.0625rem;
+
+$select-menu-font-size: 1.125rem;
+$select-menu-font-size-mobile: 0.9375rem;
+
+$select-menu-font-size: 1.125rem;
+$select-menu-font-size-tablette: 0.9375rem;
+
+$header-font-size: 1.7rem;
+$header-font-size-tablette: 1.3rem;
+
+$name-font-size: 4rem;
+$name-font-size-mobile: 2.4rem;
+
+$location-font-size: 1.5rem;
+$location-font-size-mobile: 1.3125rem;
+
+$tagline-font-size: 1.125rem;
+$tagline-font-size-mobile: 0.9375rem;
+
+$lightbox-button-font-size: 3.8rem;
+
+/* Line height variables */
+
+$line-height: 1.5;
+
+/* Define color variables */
+$white: #FFF;
+$black: #000;
+$grey: #525252;
+$formColor: #312E2E;
+$lightGrey: #fafafa;
+$mouseGrey: #c4c4c4;
+$mediumGrey: #757575;
+
+$primary-color: #901c1c;
+$orange-light: #db8876;
+$orange: #d3573c;
+
+/* Responsive variables */
+
+// Margins on Mobile
+$mobileMargins: 20px; 
+
+// Margins on Desktop
+$desktopMargins: 100px;  
+
+// Border radius of elements
+$borderRadius: 5px;
+
+/* Logo variables */
+$logo-height: 3.125rem;
+$logo-height-tablette: 2.188rem;
+$logo-height-mobile: 1.8rem;
+$logo-height-mobile-landscape: 2rem;
+
+/* Grid variables */
+$grid-columns-width: 0.8fr 8.814rem;
+$grid-rows-height: 2.5rem 1fr;
+$grid-template-mobile: $grid-rows-height / $grid-columns-width;
+
+$one-column: 1fr;
+$two-column: repeat(2, 1fr);
+$three-column: repeat(3, 1fr);
+
+$form-second-column-width: 8.814rem;
+
+$modal-grid-columns: 0.8fr;

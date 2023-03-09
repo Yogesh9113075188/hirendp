@@ -1,0 +1,11 @@
+.sr-container {
+    position: relative;
+    overflow: hidden;
+
+    &__gallery { // h2 title for screen-readers
+        position: absolute;
+        left: -300%;
+        top:0;
+        color: transparent;
+    }
+}
